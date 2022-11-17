@@ -1,1 +1,3 @@
-# ls-rb175-heroku-sinatra-book-viewer
+# Launch School Book Viewer App
+
+Deployed to Heroku via Heroku CLI.
