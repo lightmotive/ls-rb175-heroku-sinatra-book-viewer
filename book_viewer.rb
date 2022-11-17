@@ -9,10 +9,7 @@ helpers do
     each_line = data_string.each_line('')
 
     Enumerator.new do |y|
-      loop do
-        line = each_line.next
-        y.yield line.strip
-      end
+      loop { y.yield each_line.next.strip }
     end
   end
 
