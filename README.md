@@ -1,3 +1,3 @@
 # Launch School Book Viewer App
 
-Deployed to Heroku via Heroku CLI.
+Deployed to Heroku PaaS via Heroku CLI.
