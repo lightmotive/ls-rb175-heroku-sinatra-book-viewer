@@ -6,7 +6,14 @@ require 'tilt/erubis'
 
 helpers do
   def plain_text_paragraph_enum(data_string)
-    data_string.each_line('', chomp: true)
+    each_line = data_string.each_line('')
+
+    Enumerator.new do |y|
+      loop do
+        line = each_line.next
+        y.yield line.strip
+      end
+    end
   end
 
   def highlight_query(content, query, prefix: '<strong>', suffix: '</strong>')
